@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { FaTemperatureLow , FaTemperatureHigh  } from "react-icons/fa";
 import { WiHumidity } from "react-icons/wi";
-import SpeedIcon from '@mui/icons-material/Speed';
 import { BsWind } from "react-icons/bs";
 
 function Output()
@@ -18,7 +17,7 @@ function Output()
             const response = await fetch(url);
             const resjson = await response.json();
             const weather = resjson.weather;
-            console.log(resjson);
+            // console.log(resjson);
             if(resjson.main)
             {
                 setData({...resjson.main,speed:resjson.wind.speed});
@@ -66,7 +65,7 @@ function Output()
                 </td>
                 <td>
                 
-                <SpeedIcon size={20} /> Pressure :&emsp;{data.pressure} hPa
+                <i className='fa-solid fa-gauge'></i> Pressure :&emsp;{data.pressure} hPa
                 
                 </td>
                 </tr>
