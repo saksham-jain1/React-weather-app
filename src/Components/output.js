@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { FaTemperatureLow , FaTemperatureHigh  } from "react-icons/fa";
 import { WiHumidity } from "react-icons/wi";
+import SpeedIcon from '@mui/icons-material/Speed';
 import { BsWind } from "react-icons/bs";
 
 function Output()
@@ -65,7 +66,7 @@ function Output()
                 </td>
                 <td>
                 
-                Pressure :&emsp;{data.pressure} hPa
+                <SpeedIcon size={20} /> Pressure :&emsp;{data.pressure} hPa
                 
                 </td>
                 </tr>
