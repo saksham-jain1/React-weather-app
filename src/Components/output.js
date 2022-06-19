@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { FaTemperatureLow , FaTemperatureHigh  } from "react-icons/fa";
 import { WiHumidity } from "react-icons/wi";
-import { TbGauge } from "react-icons/tb";
 import { BsWind } from "react-icons/bs";
 
 function Output()
@@ -66,7 +65,7 @@ function Output()
                 </td>
                 <td>
                 
-                <TbGauge size={20} /> Pressure :&emsp;{data.pressure} hPa
+                Pressure :&emsp;{data.pressure} hPa
                 
                 </td>
                 </tr>
