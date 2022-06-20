@@ -36,7 +36,7 @@ function Output()
     },[place]);
 
     return  (
-        <div className="card col-xl-6 col-md-8 col-sm-10 container-fluid align-center justify-content-center bg-info shadow-lg my-5 py-5 px-sm-0 px-md-5" style={{borderRadius:'25px'}}>
+        <div className="card col-xl-6 col-md-8 col-sm-10 container-fluid align-center justify-content-center shadow-lg my-5 py-5 px-sm-0 px-md-5" style={{backgroundColor:'#1696e0',borderRadius:'25px'}}>
         <div className="p-auto m-auto col-xl-6 col-md-8 col-sm-8 col-10">
         <input className="form-control" type="search" placeholder='Enter city name' onChange={(e) => {setPlace(e.target.value);setData([]);}} value={place} />
         </div>
@@ -64,16 +64,12 @@ function Output()
                 <WiHumidity size={20} /> Humidity :&emsp;{data.humidity}%
                 </td>
                 <td>
-                
                 <i className='fa-solid fa-gauge'></i> Pressure :&emsp;{data.pressure} hPa
-                
                 </td>
                 </tr>
                 <tr>
                 <td>
-                
                 <BsWind size={20} /> Wind Speed :&emsp;{data.speed} m/sec
-                
                 </td>
                 </tr>
                 </tbody>
